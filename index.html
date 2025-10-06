@@ -1,0 +1,2335 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="profile" href="https://gmpg.org/xfn/11">
+
+  <title>Vega</title>
+  <meta name="robots" content="max-image-preview:large">
+  <style>
+    img:is([sizes="auto" i], [sizes^="auto," i]) {
+      contain-intrinsic-size: 3000px 1500px
+    }
+  </style>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+ 
+ 
+  <script>
+    window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/solvior.themejunction.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.2" } };
+    /*! This file is auto-generated */
+    !function (s, n) { var o, i, e; function c(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function p(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data), a = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)); return t.every(function (e, t) { return e === a[t] }) } function u(e, t) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); for (var n = e.getImageData(16, 16, 1, 1), a = 0; a < n.data.length; a++)if (0 !== n.data[a]) return !1; return !0 } function f(e, t, n, a) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !a(e, "\ud83e\udedf") }return !1 } function g(e, t, n, a) { var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : s.createElement("canvas"), o = r.getContext("2d", { willReadFrequently: !0 }), i = (o.textBaseline = "top", o.font = "600 32px Arial", {}); return e.forEach(function (e) { i[e] = t(o, e, n, a) }), i } function t(e) { var t = s.createElement("script"); t.src = e, t.defer = !0, s.head.appendChild(t) } "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", i = ["flag", "emoji"], n.supports = { everything: !0, everythingExceptFlag: !0 }, e = new Promise(function (e) { s.addEventListener("DOMContentLoaded", e, { once: !0 }) }), new Promise(function (t) { var n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + g.toString() + "(" + [JSON.stringify(i), f.toString(), p.toString(), u.toString()].join(",") + "));", a = new Blob([e], { type: "text/javascript" }), r = new Worker(URL.createObjectURL(a), { name: "wpTestEmojiSupports" }); return void (r.onmessage = function (e) { c(n = e.data), r.terminate(), t(n) }) } catch (e) { } c(n = g(i, f, p, u)) } t(n) }).then(function (e) { for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]); n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () { n.DOMReady = !0 } }).then(function () { return e }).then(function () { var e; n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji))) })) }((window, document), window._wpemojiSettings);
+  </script>
+  <style id="wp-emoji-styles-inline-css">
+    img.wp-smiley,
+    img.emoji {
+      display: inline !important;
+      border: none !important;
+      box-shadow: none !important;
+      height: 1em !important;
+      width: 1em !important;
+      margin: 0 0.07em !important;
+      vertical-align: -0.1em !important;
+      background: none !important;
+      padding: 0 !important;
+    }
+  </style>
+  <style id="classic-theme-styles-inline-css">
+    /*! This file is auto-generated */
+    .wp-block-button__link {
+      color: #fff;
+      background-color: #32373c;
+      border-radius: 9999px;
+      box-shadow: none;
+      text-decoration: none;
+      padding: calc(.667em + 2px) calc(1.333em + 2px);
+      font-size: 1.125em
+    }
+
+    .wp-block-file__button {
+      background: #32373c;
+      color: #fff;
+      text-decoration: none
+    }
+  </style>
+  <style id="global-styles-inline-css">
+   :root {
+  --wp--preset--aspect-ratio--square: 1;
+  --wp--preset--aspect-ratio--4-3: 4/3;
+  --wp--preset--aspect-ratio--3-4: 3/4;
+  --wp--preset--aspect-ratio--3-2: 3/2;
+  --wp--preset--aspect-ratio--2-3: 2/3;
+  --wp--preset--aspect-ratio--16-9: 16/9;
+  --wp--preset--aspect-ratio--9-16: 9/16;
+
+  --wp--preset--color--black: #000000;
+  --wp--preset--color--cyan-bluish-gray: #abb8c3;
+  --wp--preset--color--white: #ffffff;
+  --wp--preset--color--pale-pink: #f78da7;
+  --wp--preset--color--vivid-red: #cf2e2e;
+  --wp--preset--color--luminous-vivid-orange: #ff6900;
+  --wp--preset--color--luminous-vivid-amber: #fcb900;
+  --wp--preset--color--light-green-cyan: #7bdcb5;
+  --wp--preset--color--vivid-green-cyan: #00d084;
+  --wp--preset--color--pale-cyan-blue: #8ed1fc;
+  --wp--preset--color--vivid-cyan-blue: #009688; /* changed from #3a4952 */
+  --wp--preset--color--vivid-purple: #9b51e0;
+
+  --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, #009688 0%, #9b51e0 100%);
+  --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+  --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+  --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+  --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+  --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+  --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+  --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+  --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(63, 64, 70) 100%);
+  --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+  --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+  --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(93, 75, 75) 100%);
+
+  --wp--preset--font-size--small: 13px;
+  --wp--preset--font-size--medium: 20px;
+  --wp--preset--font-size--large: 36px;
+  --wp--preset--font-size--x-large: 42px;
+
+  --wp--preset--spacing--20: 0.44rem;
+  --wp--preset--spacing--30: 0.67rem;
+  --wp--preset--spacing--40: 1rem;
+  --wp--preset--spacing--50: 1.5rem;
+  --wp--preset--spacing--60: 2.25rem;
+  --wp--preset--spacing--70: 3.38rem;
+  --wp--preset--spacing--80: 5.06rem;
+
+  --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+  --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+  --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+  --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+  --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+}
+
+
+    :where(.is-layout-flex) {
+      gap: 0.5em;
+    }
+
+    :where(.is-layout-grid) {
+      gap: 0.5em;
+    }
+
+    body .is-layout-flex {
+      display: flex;
+    }
+
+    .is-layout-flex {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .is-layout-flex> :is(*, div) {
+      margin: 0;
+    }
+
+    body .is-layout-grid {
+      display: grid;
+    }
+
+    .is-layout-grid> :is(*, div) {
+      margin: 0;
+    }
+
+    :where(.wp-block-columns.is-layout-flex) {
+      gap: 2em;
+    }
+
+    :where(.wp-block-columns.is-layout-grid) {
+      gap: 2em;
+    }
+
+    :where(.wp-block-post-template.is-layout-flex) {
+      gap: 1.25em;
+    }
+
+    :where(.wp-block-post-template.is-layout-grid) {
+      gap: 1.25em;
+    }
+
+    .has-black-color {
+      color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-color {
+      color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-color {
+      color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-color {
+      color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-color {
+      color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-color {
+      color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-color {
+      color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-color {
+      color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-color {
+      color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-color {
+      color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-color {
+      color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-color {
+      color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-black-background-color {
+      background-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-background-color {
+      background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-background-color {
+      background-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-background-color {
+      background-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-background-color {
+      background-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-background-color {
+      background-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-background-color {
+      background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-background-color {
+      background-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-black-border-color {
+      border-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-border-color {
+      border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-border-color {
+      border-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-border-color {
+      border-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-border-color {
+      border-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-border-color {
+      border-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-border-color {
+      border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-border-color {
+      border-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+      background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+    }
+
+    .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+      background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+    }
+
+    .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+    }
+
+    .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+      background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+    }
+
+    .has-cool-to-warm-spectrum-gradient-background {
+      background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+    }
+
+    .has-blush-light-purple-gradient-background {
+      background: var(--wp--preset--gradient--blush-light-purple) !important;
+    }
+
+    .has-blush-bordeaux-gradient-background {
+      background: var(--wp--preset--gradient--blush-bordeaux) !important;
+    }
+
+    .has-luminous-dusk-gradient-background {
+      background: var(--wp--preset--gradient--luminous-dusk) !important;
+    }
+
+    .has-pale-ocean-gradient-background {
+      background: var(--wp--preset--gradient--pale-ocean) !important;
+    }
+
+    .has-electric-grass-gradient-background {
+      background: var(--wp--preset--gradient--electric-grass) !important;
+    }
+
+    .has-midnight-gradient-background {
+      background: var(--wp--preset--gradient--midnight) !important;
+    }
+
+    .has-small-font-size {
+      font-size: var(--wp--preset--font-size--small) !important;
+    }
+
+    .has-medium-font-size {
+      font-size: var(--wp--preset--font-size--medium) !important;
+    }
+
+    .has-large-font-size {
+      font-size: var(--wp--preset--font-size--large) !important;
+    }
+
+    .has-x-large-font-size {
+      font-size: var(--wp--preset--font-size--x-large) !important;
+    }
+
+    :where(.wp-block-post-template.is-layout-flex) {
+      gap: 1.25em;
+    }
+
+    :where(.wp-block-post-template.is-layout-grid) {
+      gap: 1.25em;
+    }
+
+    :where(.wp-block-columns.is-layout-flex) {
+      gap: 2em;
+    }
+
+    :where(.wp-block-columns.is-layout-grid) {
+      gap: 2em;
+    }
+
+    :root :where(.wp-block-pullquote) {
+      font-size: 1.5em;
+      line-height: 1.6;
+    }
+  </style>
+  <link rel="stylesheet" id="contact-form-7-css" href="css/styles.css" media="all">
+  <style id="woocommerce-inline-inline-css">
+    .woocommerce form .form-row .required {
+      visibility: visible;
+    }
+  </style>
+  <link rel="stylesheet" id="slick-css" href="css/slick.css" media="all">
+  <link rel="stylesheet" id="perfect-scrollbar-css" href="css/perfect-scrollbar.min.css" media="all">
+  <link rel="stylesheet" id="perfect-scrollbar-wpc-css" href="css/custom-theme.css" media="all">
+  <link rel="stylesheet" id="magnific-popup-css" href="css/magnific-popup.css" media="all">
+  <link rel="stylesheet" id="woosq-feather-css" href="css/feather.css" media="all">
+  <link rel="stylesheet" id="woosq-frontend-css" href="css/frontend.css" media="all">
+  <link rel="stylesheet" id="woosw-icons-css" href="css/icons.css" media="all">
+  <link rel="stylesheet" id="woosw-frontend-css" href="css/frontend_1.css" media="all">
+  <style id="woosw-frontend-inline-css">
+    .woosw-popup .woosw-popup-inner .woosw-popup-content .woosw-popup-content-bot .woosw-notice {
+      background-color: #5fbd74;
+    }
+
+    .woosw-popup .woosw-popup-inner .woosw-popup-content .woosw-popup-content-bot .woosw-popup-content-bot-inner a:hover {
+      color: #5fbd74;
+      border-color: #5fbd74;
+    }
+  </style>
+  <link rel="stylesheet" id="brands-styles-css" href="css/brands.css" media="all">
+  <link rel="stylesheet" id="solvior-google-fonts-css"
+    href="//fonts.googleapis.com/css?family=Libre+Franklin%3Aital%2Cwght%400%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900%26display%3Dswap%7CLato%3Aital%2Cwght%400%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900%26display%3Dswap&subset=latin%2Clatin-ext"
+    media="all">
+  <link rel="stylesheet" id="tj-bootstrap-css" href="css/bootstrap.min.css" media="all">
+  <link rel="stylesheet" id="font-awesome-pro-css" href="css/font-awesome-pro.min.css" media="all">
+  <link rel="stylesheet" id="tj-animate-css" href="css/animate.css" media="all">
+  <link rel="stylesheet" id="tj-nice-select-css" href="css/nice-select.css" media="all">
+  <link rel="stylesheet" id="tj-mean-menu-css" href="css/mean-menu.css" media="all">
+  <link rel="stylesheet" id="tj-odometer-css" href="css/odometer.css" media="all">
+  <link rel="stylesheet" id="tj-swiper-min-css" href="css/swiper.min.css" media="all">
+  <link rel="stylesheet" id="tj-venobox-min-css" href="css/venobox.min.css" media="all">
+  <link rel="stylesheet" id="tj-solvior-icons-css" href="css/solvior-icons.css" media="all">
+  <link rel="stylesheet" id="tj-solvior-core-css" href="css/solvior-core.css" media="all">
+  <link rel="stylesheet" id="tj-solvior-unit-css" href="css/solvior-unit.css" media="all">
+  <link rel="stylesheet" id="tj-solvior-shop-css" href="css/solvior-shop.css" media="all">
+  <link rel="stylesheet" id="solvior-style-css" href="css/style.css" media="all">
+  <link rel="stylesheet" id="tjcore-style-css" href="css/tjcore.css" media="all">
+  <link rel="stylesheet" id="elementor-icons-css" href="css/elementor-icons.min.css" media="all">
+  <link rel="stylesheet" id="elementor-frontend-css" href="css/custom-frontend.min.css" media="all">
+  <link rel="stylesheet" id="elementor-post-9-css" href="css/post-9.css" media="all">
+  <link rel="stylesheet" id="widget-image-css" href="css/widget-image.min.css" media="all">
+  <link rel="stylesheet" id="elementor-post-58-css" href="css/post-58.css" media="all">
+  <link rel="stylesheet" id="elementor-gf-local-roboto-css" href="css/roboto.css" media="all">
+  <link rel="stylesheet" id="elementor-gf-local-robotoslab-css" href="css/robotoslab.css" media="all">
+  <link rel="stylesheet" id="elementor-icons-theme-junction-icons-css" href="css/tj-icons.css" media="all">
+  <link rel="stylesheet" id="elementor-icons-shared-0-css" href="css/fontawesome.min.css" media="all">
+  <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="css/solid.min.css" media="all">
+  <script type="text/template" id="tmpl-variation-template">
+	<div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}</div>
+	<div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div>
+	<div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div>
+</script>
+  <script type="text/template" id="tmpl-unavailable-variation-template">
+	<p>Sorry, this product is unavailable. Please choose a different combination.</p>
+</script>
+  <script src="js/jquery.min.js" id="jquery-core-js"></script>
+  <script src="js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+  <script src="js/jquery.blockUI.min.js" id="jquery-blockui-js" data-wp-strategy="defer"></script>
+  <script id="wc-add-to-cart-js-extra">
+    var wc_add_to_cart_params = { "ajax_url": "\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View cart", "cart_url": "https:\/\/solvior.themejunction.net\/cart\/", "is_cart": "", "cart_redirect_after_add": "no" };
+  </script>
+  <script src="js/add-to-cart.min.js" id="wc-add-to-cart-js" defer="" data-wp-strategy="defer"></script>
+  <script src="js/js.cookie.min.js" id="js-cookie-js" data-wp-strategy="defer"></script>
+  <script id="woocommerce-js-extra">
+    var woocommerce_params = { "ajax_url": "\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/?wc-ajax=%%endpoint%%", "i18n_password_show": "Show password", "i18n_password_hide": "Hide password" };
+  </script>
+  <script src="js/woocommerce.min.js" id="woocommerce-js" defer="" data-wp-strategy="defer"></script>
+  <script src="js/underscore.min.js" id="underscore-js"></script>
+  <script id="wp-util-js-extra">
+    var _wpUtilSettings = { "ajax": { "url": "\/wp-admin\/admin-ajax.php" } };
+  </script>
+  <script src="js/wp-util.min.js" id="wp-util-js"></script>
+  <link rel="https://api.w.org/" href="#">
+  <link rel="alternate" title="JSON" type="application/json"
+    href=#">
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="#">
+  <meta name="generator" content="WordPress 6.8.2">
+  <meta name="generator" content="WooCommerce 10.1.2">
+  <link rel="canonical" href="#">
+  <link rel="shortlink" href="#">
+ 
+  <noscript>
+    <style>
+      .woocommerce-product-gallery {
+        opacity: 1 !important;
+      }
+    </style>
+  </noscript>
+  <meta name="generator"
+    content="Elementor 3.31.3; features: additional_custom_breakpoints, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap">
+  <style>
+    .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+    .e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+      background-image: none !important;
+    }
+
+    @media screen and (max-height: 1024px) {
+
+      .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+      .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+        background-image: none !important;
+      }
+    }
+
+    @media screen and (max-height: 640px) {
+
+      .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+      .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+        background-image: none !important;
+      }
+    }
+  </style>
+  <link rel="icon" href="images/cropped-fav-32x32.png" sizes="32x32">
+  <link rel="icon" href="images/cropped-fav-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="images/cropped-fav-180x180.png">
+  <meta name="msapplication-TileImage"
+    content="https://solvior.themejunction.net/wp-content/uploads/2025/04/cropped-fav-270x270.png">
+  <style id="kirki-inline-styles">
+    :root {
+      --tj-ff-body: Lato;
+      --tj-fs-body: 16px;
+      --tj-ff-heading: Libre Franklin;
+      --tj-color-text-body: #364052;
+      --tj-color-theme-primary: #0075ff;
+      --tj-color-theme-bg: #e1e8f0;
+      --tj-color-common-white: #f7f7f7;
+      --tj-color-common-white-2: #a9b0b8;
+      --tj-color-theme-dark: #051229;
+      --tj-color-common-black: #000000;
+      --tj-color-heading-primary: #051229;
+    }
+
+    body {
+      line-height: 1.6;
+    }
+
+    @media (max-width: 767px) {}
+
+    @media (min-width: 768px) and (max-width: 991px) {}
+
+    @media (min-width: 992px) {}
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(fonts/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(fonts/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Libre Franklin';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(fonts/jizOREVItHgc8qDIbSTKq4XkRg8T88bjFuXOnduh8MKkDdDJX-I.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Libre Franklin';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(fonts/jizOREVItHgc8qDIbSTKq4XkRg8T88bjFuXOnduh8MKkBNDJX-I.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Libre Franklin';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(fonts/jizOREVItHgc8qDIbSTKq4XkRg8T88bjFuXOnduh8MKkD9DJX-I.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Libre Franklin';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(fonts/jizOREVItHgc8qDIbSTKq4XkRg8T88bjFuXOnduh8MKkDtDJX-I.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Libre Franklin';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(fonts/jizOREVItHgc8qDIbSTKq4XkRg8T88bjFuXOnduh8MKkANDJ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(fonts/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(fonts/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Libre Franklin';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(fonts/jizOREVItHgc8qDIbSTKq4XkRg8T88bjFuXOnduh8MKkDdDJX-I.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Libre Franklin';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(fonts/jizOREVItHgc8qDIbSTKq4XkRg8T88bjFuXOnduh8MKkBNDJX-I.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Libre Franklin';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(fonts/jizOREVItHgc8qDIbSTKq4XkRg8T88bjFuXOnduh8MKkD9DJX-I.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Libre Franklin';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(fonts/jizOREVItHgc8qDIbSTKq4XkRg8T88bjFuXOnduh8MKkDtDJX-I.woff2) format('woff2');
+      unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Libre Franklin';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(fonts/jizOREVItHgc8qDIbSTKq4XkRg8T88bjFuXOnduh8MKkANDJ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+  </style>
+</head>
+
+
+
+<body
+  class="wp-singular page-template page-template-elementor_header_footer page page-id-58 wp-embed-responsive wp-theme-solvior theme-solvior woocommerce-no-js  active_ woocommerce-active elementor-default elementor-template-full-width elementor-kit-9 elementor-page elementor-page-58">
+
+
+  <a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
+
+  <!-- header start -->
+  <div data-elementor-type="wp-post" data-elementor-id="1034" class="elementor elementor-1034">
+    <div class="elementor-element elementor-element-9bd7e49 e-con-full e-flex e-con e-parent" data-id="9bd7e49"
+      data-element_type="container">
+      <div class="elementor-element elementor-element-5f122af elementor-widget elementor-widget-tj-header"
+        data-id="5f122af" data-element_type="widget" data-widget_type="tj-header.default">
+        <div class="elementor-widget-container">
+          <!-- start: Header Area -->
+          <header class="tj-header-area header-2 header-absolute">
+            <div class="header-bottom">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="header-wrapper">
+                      <div class="site-logo">
+  <a class="primary_logo logo" href="#" 
+       style="font-family: 'Futura', 'Montserrat', 'Poppins', 'Avenir', 'Circular', sans-serif;
+            font-weight: 700; 
+            font-size: 2rem; 
+            letter-spacing: 0.05em; 
+            color: #ffffff; 
+            text-transform: uppercase; 
+            text-decoration: none; 
+            display: inline-block;">
+   Vega
+  </a>
+</div>
+
+                      <!-- main navigation -->
+                      <div class="mainmenu d-lg-block d-none mainMenu" id="main-menu">
+                        <ul id="main-header-menu" class="menu">
+                          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                            id="menu-item-67"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1442 menu-item-1442 nav-item">
+                            <a title="Home" href="" class="nav-links">Home</a>
+                          
+                          </li>
+                          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                            id="menu-item-1448"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1442 menu-item-1442 nav-item">
+                            <a title="Pages" href="#" class="nav-links">About us</a>
+                        
+                          </li>
+                          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                            id="menu-item-1382"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1442 menu-item-1442 nav-item">
+                            <a title="Services" href="https://vega.mu/services/"
+                              class="nav-links">Services</a>
+                          
+                          </li>
+                          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                            id="menu-item-1415"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1442 menu-item-1442 nav-item">
+                            <a title="Portfolios" href="https://vega.mu/projects/"
+                              class="nav-links">Portfolios</a>
+                          </li>
+                          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                            id="menu-item-66"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1442 menu-item-1442 nav-item">
+                            <a title="Blog" href="https://vega.mu/blog/" class="nav-links">Blog</a>
+                         
+                          </li>
+                          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                            id="menu-item-1442"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1442 menu-item-1442 nav-item">
+                            <a title="Contact" href="https://vega.mu/contact-us/"
+                              class="nav-links">Contact</a></li>
+                        </ul>
+                      </div>
+                      <div class="header_right_info d-none d-lg-inline-flex">
+
+                        <!-- contact -->
+                        
+
+                        <!-- menu bar -->
+                        <button class="menu_btn">
+                         <span class="cubes">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </span>
+                        </button>
+                      </div>
+                      <!-- menu bar -->
+                      <button class="menu_btn d-lg-none hamburgerBtn">
+                      <span class="cubes">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <header class="tj-header-area header-2 header-duplicate header-sticky">
+            <div class="header-bottom">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="header-wrapper">
+                       <div class="site-logo">
+  <a class="primary_logo logo" href="#" 
+       style="font-family: 'Futura', 'Montserrat', 'Poppins', 'Avenir', 'Circular', sans-serif;
+            font-weight: 700; 
+            font-size: 2rem; 
+            letter-spacing: 0.05em; 
+            color: #ffffff; 
+            text-transform: uppercase; 
+            text-decoration: none; 
+            display: inline-block;">
+   Vega
+  </a>
+</div>
+
+                      <!-- main navigation -->
+                      <div class="mainmenu d-lg-block d-none mainMenu" id="main-menu">
+                        <ul id="main-header-menu" class="menu">
+                          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                            id="menu-item-67"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1442 menu-item-1442 nav-item">
+                            <a title="Home" href="" class="nav-links">Home</a>
+                          
+                          </li>
+                          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                            id="menu-item-1448"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1442 menu-item-1442 nav-item">
+                            <a title="Pages" href="#" class="nav-links">About us</a>
+                        
+                          </li>
+                          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                            id="menu-item-1382"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1442 menu-item-1442 nav-item">
+                            <a title="Services" href="https://vega.mu/services/"
+                              class="nav-links">Services</a>
+                          
+                          </li>
+                          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                            id="menu-item-1415"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1442 menu-item-1442 nav-item">
+                            <a title="Portfolios" href="https://vega.mu/projects/"
+                              class="nav-links">Portfolios</a>
+                          </li>
+                          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                            id="menu-item-66"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1442 menu-item-1442 nav-item">
+                            <a title="Blog" href="https://vega.mu/blog/" class="nav-links">Blog</a>
+                         
+                          </li>
+                          <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
+                            id="menu-item-1442"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1442 menu-item-1442 nav-item">
+                            <a title="Contact" href="https://vega.mu/contact-us/"
+                              class="nav-links">Contact</a></li>
+                        </ul>
+                      </div>
+                      <div class="header_right_info d-none d-lg-inline-flex">
+
+                        <!-- contact -->
+                        
+
+                        <!-- menu bar -->
+                        <button class="menu_btn">
+                        <span class="cubes">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </span>
+                        </button>
+                      </div>
+                      <!-- menu bar -->
+                      <button class="menu_btn d-lg-none hamburgerBtn">
+                       <span class="cubes">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <!-- end: Header Area -->
+
+          <!-- start: Search Popup -->
+          <div class="search_popup" id="headerSearch-5f122af">
+            <div class="search_close" id="searchClose-5f122af">
+              <button type="button" class="search_close_btn">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17 1L1 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                  <path d="M1 1L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-xxl-12">
+                  <div class="tj_search_wrapper">
+                    <div class="search_form">
+                      <form method="get" action="https://vega.mu/">
+                        <div class="search_input">
+                          <h4 class="title">Search blog, projects, service or people.</h4>
+                          <div class="search-box">
+                            <input class="search-input-field" type="search" name="s" placeholder="Search here..."
+                              value="" required="">
+                            <button type="submit">
+                              <i aria-hidden="true" class="tji-search"></i> </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div
+              </div>
+            </div>
+          </div>
+          <div class="search-popup-overlay" id="searchOverlay-5f122af"></div>
+          <!-- end: Search Popup -->
+
+          <!-- start: Hamburger Menu -->
+          <div class="body-overlay" id="hamburgerOverlay-5f122af"></div>
+          <div class="hamburger-area" id="hamburger-5f122af" data-lenis-prevent="">
+            <div class="hamburger_bg"></div>
+            <div class="hamburger_wrapper">
+
+              <div class="hamburger_top d-flex align-items-center justify-content-between">
+
+                <!-- logo -->
+                 <div class="site-logo">
+  <a class="primary_logo logo" href="#" 
+       style="font-family: 'Futura', 'Montserrat', 'Poppins', 'Avenir', 'Circular', sans-serif;
+            font-weight: 700; 
+            font-size: 2rem; 
+            letter-spacing: 0.05em; 
+            color: #ffffff; 
+            text-transform: uppercase; 
+            text-decoration: none; 
+            display: inline-block;">
+   Vega
+  </a>
+</div>
+
+
+                <!-- close -->
+                <div class="hamburger_close" id="hamburgerClose-5f122af">
+                  <button class="hamburger_close_btn hamburgerCloseBtn"><i aria-hidden="true"
+                      class="fa-light fa-xmark"></i></button>
+                </div>
+
+              </div>
+
+              <div class="hamburger-desc">
+                we are committed to delivering innovative solutions that drive growth and add value to our clients. With
+                a team of experienced professionals and a passion for excellence. </div>
+
+              <!-- search -->
+              <div class="hamburger_search">
+                <form method="get" action="https://vega.mu">
+                  <button type="submit"><i aria-hidden="true" class="fa-light fa-search"></i></button>
+                  <input type="search" autocomplete="off" name="s" value="" placeholder="Search here" required="">
+                </form>
+              </div>
+
+              <!-- mobile menu -->
+              <div class="hamburger_menu">
+                <div class="mobile_menu mobileMenu"></div>
+              </div>
+
+              <!-- contact -->
+              <div class="hamburger-infos">
+                <h4 class="hamburger-title">Contct Info</h4>
+                <div class="header-contact-info">
+                  <div class="contact_item">
+                    <span class="subtitle">Phone</span>
+                    <div class="text">
+                      <a class="link" href="tel:000123456789">
+                        (+012) 3456 7890 </a>
+                    </div>
+                  </div>
+                  <div class="contact_item">
+                    <span class="subtitle">Email</span>
+                    <div class="text">
+                      <a class="link" href="mailto:support@Vega.mu">
+                        support@Vega.mu </a>
+                    </div>
+                  </div>
+                  <div class="contact_item">
+                    <span class="subtitle">Location</span>
+                    <div class="text">
+                      <a class="link" href="#">
+                        8821 Street Mosco, Russia </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- socials -->
+              <div class="hamburger-socials">
+                <h4 class="hamburger-title">Follow us</h4>
+
+                 <ul><li>
+  <a class="link" href="#"><i class="fas fa-money-bill-wave"></i></a>
+</li>
+<li>
+  <a class="link" href="#"><i class="fas fa-chart-line"></i></a>
+</li>
+<li>
+  <a class="link" href="#"><i class="fas fa-handshake"></i></a>
+</li>
+<li>
+  <a class="link" href="#"><i class="fas fa-building-columns"></i></a>
+</li></ul>
+              </div>
+            </div>
+          </div>
+          <!-- end: Hamburger Menu -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- header end -->
+
+  <!-- start: Before Main Content -->
+  <!-- preloader -->
+  <div class="preloader">
+    <div class="loading-container">
+      <div class="loading"></div>
+      <div id="loading-icon">
+        <img src="images/loader.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- end: Preloader -->
+  <!-- Start: Mouse cursor -->
+  <div class="mouseCursor cursor-outer"></div>
+  <div class="mouseCursor cursor-inner">
+    <span><i class="tji-angle-left"></i>Drag<i class="tji-angle-right"></i></span>
+  </div>
+  <!-- End: Mouse cursor -->
+  <!-- end: Before Main Content -->
+
+  <!-- start: Breadcrumb Section -->
+  <!-- end: Breadcrumb Section -->
+
+  <main id="content" class="site-main">
+    <div data-elementor-type="wp-page" data-elementor-id="58" class="elementor elementor-58">
+      <div class="elementor-element elementor-element-f8367fb e-con-full e-flex e-con e-parent" data-id="f8367fb"
+        data-element_type="container">
+        <div class="elementor-element elementor-element-600cbc3 elementor-widget elementor-widget-tj-hero-banner-slider"
+          data-id="600cbc3" data-element_type="widget" data-widget_type="tj-hero-banner-slider.default">
+          <div class="elementor-widget-container">
+
+            <section class="tj-hero-slider style-1 bannerWrap" data-loop="yes" data-nav="yes" data-autoplay="yes"
+              data-delay="5000">
+              <div dir="ltr" class="swiper full-slider-active" id="bannerSlider-600cbc3">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <section class="tj-slider-section"
+                      data-bg-image="images/bg-1.jpg">
+                      <div class="container">
+                        <div class="row">
+                          <div class="slider-wrapper">
+                            <div class="slider-content style-1">
+                              <!-- subtitle -->
+                             
+                              <!-- title -->
+                              <h1 class="slider-title">Driving Financial Growth with Expert Consulting</h1>
+                              <!-- button -->
+                              <a class="tj-primary-btn slider-button" href="https://vega.mu/contact/">
+                                <span class="btn_inner">
+                                  <span class="btn_icon">
+                                    <span>
+                                      <i aria-hidden="true" class="tj tji-arrow-right"></i> <i aria-hidden="true"
+                                        class="tj tji-arrow-right"></i> </span>
+                                  </span>
+
+                                  <span class="btn_text">
+                                    <span>Free consultation</span>
+                                  </span>
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider-feature-wrap">
+                        <div class="slider-feature-box">
+                          <div class="slider-logo">
+                            <img decoding="async" src="images/slider-award.svg" alt="">
+                          </div>
+
+                          <div class="desc">
+                            <p>At Vega, we deliver tailored financial strategies and business solutions that maximize growth, mitigate risk, and create sustainable value for businesses in Mauritius and beyond.</p>
+                          </div>
+
+                          <div class="slider-shape">
+                            <img decoding="async" src="images/slider-shapes.png" alt="Shapes">
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="swiper-slide">
+                    <section class="tj-slider-section"
+                      data-bg-image="images/slider-2.webp">
+                      <div class="container">
+                        <div class="row">
+                          <div class="slider-wrapper">
+                            <div class="slider-content style-1">
+                              <!-- subtitle -->
+                           
+                              <!-- title -->
+                              <h1 class="slider-title">Maximize Your Business Potential with Strategic Financial Guidance</h1>
+                              <!-- button -->
+                              <a class="tj-primary-btn slider-button" href="https://vega.mu/contact/">
+                                <span class="btn_inner">
+                                  <span class="btn_icon">
+                                    <span>
+                                      <i aria-hidden="true" class="tj tji-arrow-right"></i> <i aria-hidden="true"
+                                        class="tj tji-arrow-right"></i> </span>
+                                  </span>
+
+                                  <span class="btn_text">
+                                    <span>Free consultation</span>
+                                  </span>
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider-feature-wrap">
+                        <div class="slider-feature-box">
+                          <div class="slider-logo">
+                            <img decoding="async" src="images/slider-award.svg" alt="">
+                          </div>
+
+                          <div class="desc">
+                            <p>Vega provides expert financial consulting and innovative solutions to help your business thrive in Mauritius’s competitive market.</p>
+                          </div>
+
+                          <div class="slider-shape">
+                            <img decoding="async" src="images/slider-shapes.png" alt="Shapes">
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="swiper-slide">
+                    <section class="tj-slider-section"
+                      data-bg-image="images/slider-3.webp">
+                      <div class="container">
+                        <div class="row">
+                          <div class="slider-wrapper">
+                            <div class="slider-content style-1">
+                              <!-- subtitle -->
+                          
+                              <!-- title -->
+                              <h1 class="slider-title">Transforming Financial Challenges into Growth Opportunities</h1>
+                              <!-- button -->
+                              <a class="tj-primary-btn slider-button" href="https://vega.mu/contact/">
+                                <span class="btn_inner">
+                                  <span class="btn_icon">
+                                    <span>
+                                      <i aria-hidden="true" class="tj tji-arrow-right"></i> <i aria-hidden="true"
+                                        class="tj tji-arrow-right"></i> </span>
+                                  </span>
+
+                                  <span class="btn_text">
+                                    <span>Free consultation</span>
+                                  </span>
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider-feature-wrap">
+                        <div class="slider-feature-box">
+                          <div class="slider-logo">
+                            <img decoding="async" src="images/slider-award.svg" alt="">
+                          </div>
+
+                          <div class="desc">
+                            <p>Our team at Vega combines deep financial expertise with actionable strategies to drive sustainable success for your business..</p>
+                          </div>
+
+                          <div class="slider-shape">
+                            <img decoding="async" src="images/slider-shapes.png" alt="Shapes">
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <div class="tj-navigation">
+                  <div class="tj-btn tj-btn-prev"><i class="tji-angle-left"></i></div>
+                  <div class="tj-sw-pagination"></div>
+                  <div class="tj-btn tj-btn-next"><i class="tji-angle-right"></i></div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="elementor-element elementor-element-3ad3da6 e-flex e-con-boxed e-con e-parent" data-id="3ad3da6"
+        data-element_type="container" data-settings="{" background_background":"classic"}"="">
+        <div class="e-con-inner">
+          <div
+            class="elementor-element elementor-element-7cf727b e-con-full elementor-hidden-mobile e-flex e-con e-child"
+            data-id="7cf727b" data-element_type="container">
+            <div class="elementor-element elementor-element-247076b elementor-widget elementor-widget-tj-about-image"
+              data-id="247076b" data-element_type="widget" data-widget_type="tj-about-image.default">
+              <div class="elementor-widget-container">
+
+                <div data-wow-delay="0.1s" class="about-images-group-one hover:shine wow fadeInUp">
+                  <img decoding="async" src="images/h2-about-1.webp" alt="">
+                  <div class="about-author tj-wrap">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="elementor-element elementor-element-94b01b8 e-con-full e-flex e-con e-child" data-id="94b01b8"
+            data-element_type="container">
+            <div
+              class="elementor-element elementor-element-42e6fde elementor-widget__width-initial tj_section_align elementor-align-start elementor-widget elementor-widget-tj-title"
+              data-id="42e6fde" data-element_type="widget" data-widget_type="tj-title.default">
+              <div class="elementor-widget-container">
+
+                <div class="sec-heading style-2">
+
+                 
+
+                  <h2 class="sec-title text-anim">Your Trusted Financial Consulting Partner</h2>
+                <div class="desc">  
+  Vega is committed to empowering businesses of all sizes with innovative financial solutions and strategic insights. Our team of seasoned consultants brings deep expertise in corporate finance, investment advisory, and business strategy to help you achieve measurable growth and long-term success.  
+</div>
+
+<style>
+  .desc {
+    text-align: justify;
+  }
+</style>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="elementor-element elementor-element-b1088f9 elementor-widget elementor-widget-tj-lists"
+              data-id="b1088f9" data-element_type="widget" data-widget_type="tj-lists.default">
+              <div class="elementor-widget-container">
+
+                <div data-wow-delay="0.3s" class="check-list-one tj-el-list wow fadeInUp">
+                  <ul>
+                    <li>
+                      <i aria-hidden="true" class="tji-double-check"></i>
+                     Over 10 years of experience in financial consulting
+                    </li>
+                    <li>
+                      <i aria-hidden="true" class="tji-double-check"></i>
+                    Tailored solutions for SMEs, corporates, and startups
+                    </li>
+                    <li>
+                      <i aria-hidden="true" class="tji-double-check"></i>
+                   Proven track record in financial planning, risk management, and strategy
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-28c65ea tj_el_button elementor-align-left elementor-widget elementor-widget-tj-button"
+              data-id="28c65ea" data-element_type="widget" data-widget_type="tj-button.default">
+              <div class="elementor-widget-container">
+                <div class="tj_btn_wrapper">
+
+
+                  <a data-wow-delay="0.5s" href="/contact/" class="tj-primary-btn wow fadeInUp">
+                    <span class="btn_inner">
+                      <span class="btn_icon">
+                        <span>
+                          <i aria-hidden="true" class="tji-arrow-right tji"></i> </i> </span>
+                      </span>
+                      <span class="btn_text">
+                        <span>
+                          Free consultation </span>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-049872a e-con-full elementor-hidden-desktop elementor-hidden-laptop elementor-hidden-tablet_extra elementor-hidden-tablet elementor-hidden-mobile_extra e-flex e-con e-child"
+            data-id="049872a" data-element_type="container">
+            <div class="elementor-element elementor-element-763a68b elementor-widget elementor-widget-tj-about-image"
+              data-id="763a68b" data-element_type="widget" data-widget_type="tj-about-image.default">
+              <div class="elementor-widget-container">
+
+                <div data-wow-delay="0.1s" class="about-images-group-one hover:shine wow fadeInUp">
+                  <img decoding="async" src="images/h2-about-1.webp" alt="">
+                  <div class="about-author tj-wrap">
+                    <div class="signature">
+                      <img decoding="async" src="images/signature.png" alt="">
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      <div class="elementor-element elementor-element-61cf9dc e-flex e-con-boxed e-con e-parent" data-id="61cf9dc"
+        data-element_type="container">
+        <div class="e-con-inner">
+          <div class="elementor-element elementor-element-806df52 e-con-full e-flex e-con e-child" data-id="806df52"
+            data-element_type="container">
+            <div
+              class="elementor-element elementor-element-9ab3bac elementor-widget__width-initial tj_section_align elementor-align-start elementor-widget elementor-widget-tj-title"
+              data-id="9ab3bac" data-element_type="widget" data-widget_type="tj-title.default">
+              <div class="elementor-widget-container">
+
+                <div class="sec-heading style-2">
+
+              
+
+                  <h2 class="sec-title text-anim">Get our comprehensive service offerings</h2>
+                </div>
+
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-45b2f97 elementor-hidden-mobile tj_navigation_align elementor-align-left elementor-widget elementor-widget-tj-swiper-navigation"
+              data-id="45b2f97" data-element_type="widget" data-widget_type="tj-swiper-navigation.default">
+              <div class="elementor-widget-container">
+
+                <div class="swiper_navigations service-navigation d-md-inline-flex">
+                  <div class="navigation slider-prev"><i class="tji-arrow-left"></i></div>
+                  <div class="navigation slider-next"><i class="tji-arrow-right"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="elementor-element elementor-element-9ab6f5c e-con-full e-flex e-con e-child" data-id="9ab6f5c"
+            data-element_type="container">
+            <div class="elementor-element elementor-element-c855683 elementor-widget elementor-widget-tj-services"
+              data-id="c855683" data-element_type="widget" data-widget_type="tj-services.default">
+              <div class="elementor-widget-container">
+
+                <!-- start: Service Area -->
+             <div class="elementor-element elementor-element-9ab6f5c e-con-full e-flex e-con e-child" data-id="9ab6f5c"
+    data-element_type="container">
+    <div class="elementor-element elementor-element-c855683 elementor-widget elementor-widget-tj-services"
+        data-id="c855683" data-element_type="widget" data-widget_type="tj-services.default">
+        <div class="elementor-widget-container">
+
+            <!-- start: Service Area -->
+            <div class="tj_service carouselWrap" data-loop="yes" data-dot="yes" data-autoplay="yes" data-delay="5000">
+                <div class="swiper tj-service-slider" dir="ltr" id="serviceSlider-c855683">
+                    <div class="swiper-wrapper rightSwipeWrap">
+
+                        <!-- Service 1 -->
+                        <div class="swiper-slide right-swipe">
+                            <div class="service-style-2 service-el-item">
+                                <div class="service-icon el-icon">
+                                    <i class="tji-optimization"></i>
+                                </div>
+                                <div class="service-content">
+                                    <span class="number el-number">01</span>
+                                    <h4 class="title">
+                                        <a href="#financial-planning">
+                                            Financial Planning & Analysis
+                                        </a>
+                                    </h4>
+                                  <div class="desc">
+    <p style="text-align: justify;">
+                                            Comprehensive financial planning, budgeting, and forecasting to ensure your business remains financially healthy and future-ready.
+                                        </p>
+                                    </div>
+                                    <a class="service-button text-btn" href="#financial-planning">
+                                        Learn More <i aria-hidden="true" class="tji-arrow-right"></i>
+                                    </a>
+                                </div>
+                                <div class="thumb">
+                                    <img decoding="async" width="645" height="670" src="/images/h1-service-3-289x300.webp"
+                                        class="img-responsive wp-post-image" alt="Financial Planning">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service 2 -->
+                        <div class="swiper-slide right-swipe">
+                            <div class="service-style-2 service-el-item">
+                                <div class="service-icon el-icon">
+                                    <i class="tji-strategic"></i>
+                                </div>
+                                <div class="service-content">
+                                    <span class="number el-number">02</span>
+                                    <h4 class="title">
+                                        <a href="#investment-advisory">
+                                            Investment & Risk Advisory
+                                        </a>
+                                    </h4>
+                                   <div class="desc">
+    <p style="text-align: justify;">
+                                            Expert guidance on investment strategies and risk management to maximize returns while minimizing exposure to market volatility.
+                                        </p>
+                                    </div>
+                                    <a class="service-button text-btn" href="#investment-advisory">
+                                        Learn More <i aria-hidden="true" class="tji-arrow-right"></i>
+                                    </a>
+                                </div>
+                                <div class="thumb">
+                                    <img decoding="async" width="645" height="670" src="images/h1-service-3-289x300.webp"
+                                        class="img-responsive wp-post-image" alt="Investment Advisory">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Service 3 -->
+                        <div class="swiper-slide right-swipe">
+                            <div class="service-style-2 service-el-item">
+                                <div class="service-icon el-icon">
+                                    <i class="tji-leadership"></i>
+                                </div>
+                                <div class="service-content">
+                                    <span class="number el-number">03</span>
+                                    <h4 class="title">
+                                        <a href="#business-strategy">
+                                            Business Strategy & Growth Consulting
+                                        </a>
+                                    </h4>
+                                   <div class="desc">
+    <p style="text-align: justify;">
+                                            Strategic consulting to identify growth opportunities, streamline operations, and improve profitability for sustainable business success.
+                                        </p>
+                                    </div>
+                                    <a class="service-button text-btn" href="#business-strategy">
+                                        Learn More <i aria-hidden="true" class="tji-arrow-right"></i>
+                                    </a>
+                                </div>
+                                <div class="thumb">
+                                    <img decoding="async" width="645" height="670" src="images/h1-service-2-600x623.webp"
+                                        class="img-responsive wp-post-image" alt="Business Strategy Consulting">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper_pagination service-pagination"></div>
+                </div>
+
+            </div>
+            <!-- end: Service Area -->
+
+        </div>
+    </div>
+</div>
+
+                <!-- end: Service Area -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   <div class="elementor-element elementor-element-e5e50cf e-con-full e-flex e-con e-parent" data-id="e5e50cf"
+    data-element_type="container">
+    <div class="elementor-element elementor-element-1deb239 e-con-full e-flex e-con e-child" data-id="1deb239"
+        data-element_type="container">
+        <div class="elementor-element elementor-element-17a5458 elementor-widget elementor-widget-image"
+            data-id="17a5458" data-element_type="widget" data-widget_type="image.default">
+            <div class="elementor-widget-container">
+                <img loading="lazy" decoding="async" width="600" height="589" src="images/h2-progress-1.webp"
+                    class="attachment-full size-full wp-image-329" alt="Financial Consulting Progress"
+                    srcset="images/h2-progress-1.webp 600w, images/h2-progress-1-300x295.webp 300w"
+                    sizes="(max-width: 600px) 100vw, 600px">
+            </div>
+        </div>
+    </div>
+
+    <div class="elementor-element elementor-element-a6e656b e-con-full e-flex e-con e-child" data-id="a6e656b"
+        data-element_type="container">
+        <div
+            class="elementor-element elementor-element-a448ff2 elementor-widget__width-initial tj_section_align elementor-align-start elementor-widget elementor-widget-tj-title"
+            data-id="a448ff2" data-element_type="widget" data-widget_type="tj-title.default">
+            <div class="elementor-widget-container">
+
+                <div class="sec-heading style-2">
+
+                    <h2 class="sec-title text-anim">Trusted Financial Experts You Can Rely On</h2>
+                    <div data-wow-delay="0.3s" class="desc wow fadeInUp">
+                        <p style="text-align: justify;">
+                            At Vega, our mission is to empower businesses of all sizes to thrive in an ever-changing financial landscape. We provide exceptional value through strategic, innovative consulting and actionable financial insights that drive sustainable growth and long-term success.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="elementor-element elementor-element-b45561a elementor-widget elementor-widget-tj-progress-bar"
+            data-id="b45561a" data-element_type="widget" data-widget_type="tj-progress-bar.default">
+            <div class="elementor-widget-container">
+
+                <div data-wow-delay="0.3s" class="progress-style-2 skill-el-wrap wow fadeInUp">
+                    <div class="proggess-item">
+                        <div class="proggess-circle">
+                            <input type="text" class="knob" value="0" data-rel="90" data-linecap="0" data-width="170"
+                                data-height="170" data-bgcolor="#0075ff1a" data-fgcolor="#0075FF" data-thickness=".12"
+                                data-readonly="true" disabled="">
+                        </div>
+                        <div class="proggess-text">
+                            <span class="sub-title el-title">Business Consultants</span>
+                        </div>
+                    </div>
+                    <div class="proggess-item">
+                        <div class="proggess-circle">
+                            <input type="text" class="knob" value="0" data-rel="95" data-linecap="0" data-width="170"
+                                data-height="170" data-bgcolor="#0075ff1a" data-fgcolor="#0075FF" data-thickness=".12"
+                                data-readonly="true" disabled="">
+                        </div>
+                        <div class="proggess-text">
+                            <span class="sub-title el-title">Client Communication</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+      <div class="elementor-element elementor-element-5d900f6 e-con-full e-flex e-con e-parent" data-id="5d900f6"
+        data-element_type="container">
+      
+      </div>
+      <div class="elementor-element elementor-element-48a4aef e-flex e-con-boxed e-con e-parent" data-id="48a4aef"
+        data-element_type="container">
+        <div class="e-con-inner">
+          <div class="elementor-element elementor-element-114b457 e-con-full e-flex e-con e-child" data-id="114b457"
+            data-element_type="container">
+            <div
+              class="elementor-element elementor-element-3c82493 elementor-widget__width-initial tj_section_align elementor-align-center elementor-widget elementor-widget-tj-title"
+              data-id="3c82493" data-element_type="widget" data-widget_type="tj-title.default">
+              <div class="elementor-widget-container">
+
+                <div class="sec-heading style-2">
+
+                  <span data-wow-delay="0.1s" class="sub-title wow fadeInUp">
+                    // Clients feedback </span>
+
+                  <h2 class="sec-title text-anim">Our clients testimonials</h2>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="elementor-element elementor-element-aa4649e e-con-full e-flex e-con e-child" data-id="aa4649e"
+            data-element_type="container">
+            <div class="elementor-element elementor-element-d49b39f e-con-full e-flex e-con e-child" data-id="d49b39f"
+              data-element_type="container">
+              <div class="elementor-element elementor-element-fb46abc elementor-widget elementor-widget-tj-about-image"
+                data-id="fb46abc" data-element_type="widget" data-widget_type="tj-about-image.default">
+                <div class="elementor-widget-container">
+
+                  <div data-wow-delay="0.3s" class="testimonial-images-2 hover:shine wow fadeInLeft">
+                    <img decoding="async" src="images/h2-test-1.webp" alt="">
+                    <div class="testimonial-funfact tj-wrap">
+                      <div class="number">
+                        <span class="odometer" data-count="3.8"></span><span>K+</span>
+                      </div>
+                      <span class="sub-title">
+                        Happy clients all over
+                        world now. </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="elementor-element elementor-element-a81d1ea e-con-full e-flex e-con e-child" data-id="a81d1ea"
+              data-element_type="container">
+              <div class="elementor-element elementor-element-02983e9 elementor-widget elementor-widget-tj-testimonial"
+                data-id="02983e9" data-element_type="widget" data-widget_type="tj-testimonial.default">
+                <div class="elementor-widget-container">
+
+                  <div data-wow-delay="0.3s" class="carouselWrap tj-testimonial-wrapper wow fadeInRight" data-loop="yes"
+                    data-nav="yes" data-autoplay="yes" data-delay="5000">
+                    <div dir="ltr" class="swiper tj-testimonial-slider-two" id="testiCarousel-02983e9">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="testimonial-style-2 tj-el-item">
+                            <div class="testimonial-content">
+                              <div class="testimonial-quote el-icon">
+                                <i aria-hidden="true" class="tji-right-quote"></i>
+                              </div>
+                              <div class="desc">
+                                <p>Partnering with Vega has transformed the way we manage our finances. Their strategic guidance in investment planning and risk management has been invaluable, helping our business achieve sustainable growth."</p>
+                              </div>
+                              <div class="testimonial-author">
+                                <div class="author-images">
+                                  <img decoding="async" src="images/h1-test-1.webp" alt="">
+                                </div>
+
+                                <div class="author-text">
+                                  <div class="testimonial-rating el-rating">
+                                    <div class="star-fill">
+                                      <div class="star-ratings">
+                                        <div class="fill-ratings" style="width: 80%">
+                                          <span>★★★★★</span>
+                                        </div>
+                                        <div class="empty-ratings">
+                                          <span>★★★★★</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <h4 class="title el-title">Florence R. Ochoa</h4>
+                                  <span class="designation el-stitle">Sr. Executive</span>
+                                </div>
+                                <div class="shape-image">
+                                  <img decoding="async" src="images/divider.png" alt="shape-image">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="testimonial-style-2 tj-el-item">
+                            <div class="testimonial-content">
+                              <div class="testimonial-quote el-icon">
+                                <i aria-hidden="true" class="tji-right-quote"></i>
+                              </div>
+                              <div class="desc">
+                                <p>Vega's expert financial consulting helped us navigate complex markets efficiently. Their advice on portfolio diversification and compliance allowed our business to thrive globally.</p>
+                              </div>
+                              <div class="testimonial-author">
+                                <div class="author-images">
+                                  <img decoding="async" src="images/h1-test-2.webp" alt="">
+                                </div>
+
+                                <div class="author-text">
+                                  <div class="testimonial-rating el-rating">
+                                    <div class="star-fill">
+                                      <div class="star-ratings">
+                                        <div class="fill-ratings" style="width: 70%">
+                                          <span>★★★★★</span>
+                                        </div>
+                                        <div class="empty-ratings">
+                                          <span>★★★★★</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <h4 class="title el-title">Debra R. Barnes</h4>
+                                  <span class="designation el-stitle">Business owner</span>
+                                </div>
+                                <div class="shape-image">
+                                  <img decoding="async" src="images/divider.png" alt="shape-image">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper_navigations testimonial-navigation">
+                        <div class="navigation slider-prev"><i class="tji-arrow-left"></i></div>
+                        <div class="navigation slider-next"><i class="tji-arrow-right"></i></div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="elementor-element elementor-element-3f41103 e-flex e-con-boxed e-con e-parent" data-id="3f41103"
+        data-element_type="container" data-settings="{" background_background":"classic"}"="">
+        <div class="e-con-inner">
+          <div class="elementor-element elementor-element-e505815 e-con-full e-flex e-con e-child" data-id="e505815"
+            data-element_type="container">
+            <div
+              class="elementor-element elementor-element-e5490d2 elementor-widget__width-initial tj_section_align elementor-align-start elementor-widget elementor-widget-tj-title"
+              data-id="e5490d2" data-element_type="widget" data-widget_type="tj-title.default">
+              <div class="elementor-widget-container">
+
+                <div class="sec-heading style-2">
+
+                 
+
+                  <h2 class="sec-title text-anim">Let’s discuss how we can maximize your financial growth</h2>
+                  <div data-wow-delay="0.3s" class="desc wow fadeInUp">
+                    <p>At Vega, we empower businesses of all sizes to thrive in an ever-changing financial landscape. Our team of experts provides tailored financial strategies and consulting solutions to drive sustainable growth, manage risk, and create long-term value.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-43a8bdc tj_el_button elementor-align-left elementor-widget elementor-widget-tj-button"
+              data-id="43a8bdc" data-element_type="widget" data-widget_type="tj-button.default">
+              <div class="elementor-widget-container">
+                <div class="tj_btn_wrapper">
+
+                  <a data-wow-delay="0.3s" href="https://vega.mu/contact/" target="_self"
+                    class="tj-primary-btn white-btn wow fadeInUp">
+                    <span class="btn_inner">
+                      <span class="btn_icon">
+                        <span>
+                          <i aria-hidden="true" class="tji-arrow-right tji"></i> <i aria-hidden="true"
+                            class="tji-arrow-right tji"></i> </span>
+                      </span>
+                      <span class="btn_text">
+                        <span>
+                          Contact us </span>
+                      </span>
+                    </span>
+                  </a>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+         <div class="elementor-element elementor-element-0de6dae e-con-full e-flex e-con e-child" data-id="0de6dae"
+     data-element_type="container">
+  <div class="elementor-element elementor-element-caa7500 elementor-widget elementor-widget-tj-form"
+       data-id="caa7500" data-element_type="widget" data-widget_type="tj-form.default">
+    <div class="elementor-widget-container">
+
+      <div data-wow-delay="0.3s" class="contact-form-one tj-form wow fadeInUp">
+        <h3 class="title">Feel free to get in touch or visit our location.</h3>
+        
+        <div class="contact-item">
+          <div class="contact-text">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:support@Vega.mu">support@Vega.mu</a>
+          </div>
+          <div class="contact-text">
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="#">Elviraton, CA 48998</a>
+          </div>
+        </div>
+
+        <!-- ✅ Web3Forms Contact Form -->
+        <form action="https://api.web3forms.com/submit" method="POST" class="tj-form" novalidate>
+          <!-- REQUIRED: Web3Forms Access Key -->
+          <input type="hidden" name="access_key" value="8cdef6cb-6205-4a28-b104-0ec8049263d3">
+
+          <!-- Optional: Redirect URL after success -->
+          <input type="hidden" name="redirect" value="https://vega.mu">
+
+          <!-- Optional: Email Subject -->
+          <input type="hidden" name="subject" value="New Contact Form Submission from Vega Website">
+
+          <!-- Optional: From Name -->
+          <input type="hidden" name="from_name" value="Vega - New Form Submission">
+
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-input">
+                <input type="text" name="Name:" placeholder="Full name*" required>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-input">
+                <input type="email" name="Email:" placeholder="Email address*" required>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-input">
+                <input type="tel" name="Phone:" placeholder="Phone number*" required>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-input">
+                <select name="Service Request:" required>
+                  <option value="Financial Planning">Financial Planning</option>
+                  <option value="Investment Consulting">Investment Consulting</option>
+                  <option value="Risk Management">Risk Management</option>
+                  <option value="Business Strategy">Business Strategy</option>
+                  <option value="Wealth Management">Wealth Management</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-input input-textarea">
+                <textarea name="Message" placeholder="Type your message" rows="6" required></textarea>
+              </div>
+            </div>
+
+            <div class="submit-button">
+              <button type="submit" class="tj-primary-btn white-btn">
+                <span class="btn_inner">
+                  <span class="btn_icon">
+                    <span>
+                      <i class="tji-arrow-right"></i>
+                      <i class="tji-arrow-right"></i>
+                    </span>
+                  </span>
+                  <span class="btn_text"><span>Send message</span></span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </form>
+        
+        <!-- ✅ End Web3Forms -->
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-040c6a0 section-space e-flex e-con-boxed e-con e-parent" data-id="040c6a0" data-element_type="container">
+  <div class="e-con-inner">
+    <div class="elementor-element elementor-element-5268c66 e-con-full e-flex e-con e-child" data-id="5268c66" data-element_type="container">
+      <div class="elementor-element elementor-element-74b9751 elementor-widget__width-initial tj_section_align elementor-align-center elementor-widget elementor-widget-tj-title" data-id="74b9751" data-element_type="widget" data-widget_type="tj-title.default">
+        <div class="elementor-widget-container">
+          <div class="sec-heading style-2">
+            <span data-wow-delay="0.1s" class="sub-title wow fadeInUp">Insights & Tips</span>
+            <h2 class="sec-title text-anim">Expert Advice for Financial and Business Success</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="elementor-element elementor-element-a0547f7 e-con-full e-flex e-con e-child" data-id="a0547f7" data-element_type="container">
+      <div class="elementor-element elementor-element-aec7767 elementor-widget elementor-widget-tj-latest-posts" data-id="aec7767" data-element_type="widget" data-widget_type="tj-latest-posts.default">
+        <div class="elementor-widget-container">
+          <div class="tj_latest_blog">
+            <div class="row rg-30 justify-content-center leftSwipeWrap">
+
+              <!-- Blog Post 1 -->
+              <div class="col-xl-4 col-md-6">
+                <div class="blog-swipe left-swipe">
+                  <div class="blog-style-2 blog-el-item">
+                    <div class="blog-images">
+                      <a href="#">
+                        <img loading="lazy" decoding="async" width="870" height="498" src="images/tj-blog-8.webp" class="attachment-full size-full wp-post-image" alt="Investment Portfolio Strategies">
+                      </a>
+                      <div class="blog-date">
+                        <span class="date">16</span>
+                        <span class="month">Sep</span>
+                      </div>
+                    </div>
+                    <div class="blog-content">
+                      <div class="blog-two-meta blog-el-meta">
+                        <ul>
+                          <li><a class="meta-link" href="#">Investment Strategy</a></li>
+                          <li>0 Comments</li>
+                        </ul>
+                      </div>
+                      <h4 class="title blog-el-title under-line">
+                        <a href="#">Maximizing Your Investment Portfolio in a Volatile Market <br><br></a>
+                      </h4>
+                      <div class="desc">Discover how strategic asset allocation and risk management can protect your portfolio while maximizing returns in uncertain market conditions.</div>
+                      <div class="blog-button">
+                        <a class="blog-btn text-btn" href="#">Read more <i aria-hidden="true" class="tji-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Blog Post 2 -->
+              <div class="col-xl-4 col-md-6">
+                <div class="blog-swipe left-swipe">
+                  <div class="blog-style-2 blog-el-item">
+                    <div class="blog-images">
+                      <a href="#">
+                        <img loading="lazy" decoding="async" width="870" height="498" src="images/tj-blog-2.webp" class="attachment-full size-full wp-post-image" alt="Financial Planning Strategies">
+                      </a>
+                      <div class="blog-date">
+                        <span class="date">10</span>
+                        <span class="month">Sep</span>
+                      </div>
+                    </div>
+                    <div class="blog-content">
+                      <div class="blog-two-meta blog-el-meta">
+                        <ul>
+                          <li><a class="meta-link" href="#">Financial Planning</a></li>
+                          <li>0 Comments</li>
+                        </ul>
+                      </div>
+                      <h4 class="title blog-el-title under-line">
+                        <a href="#">Key Financial Planning Strategies for Growing Businesses</a>
+                      </h4>
+                      <div class="desc">Learn actionable techniques for cash flow management, budgeting, and forecasting to ensure sustainable business growth.</div>
+                      <div class="blog-button">
+                        <a class="blog-btn text-btn" href="#">Read more <i aria-hidden="true" class="tji-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Blog Post 3 -->
+              <div class="col-xl-4 col-md-6">
+                <div class="blog-swipe left-swipe">
+                  <div class="blog-style-2 blog-el-item">
+                    <div class="blog-images">
+                      <a href="#">
+                        <img loading="lazy" decoding="async" width="870" height="498" src="images/tj-blog-1.webp" class="attachment-full size-full wp-post-image" alt="Risk Management for SMEs">
+                      </a>
+                      <div class="blog-date">
+                        <span class="date">05</span>
+                        <span class="month">Sep</span>
+                      </div>
+                    </div>
+                    <div class="blog-content">
+                      <div class="blog-two-meta blog-el-meta">
+                        <ul>
+                          <li><a class="meta-link" href="#">Risk Management</a></li>
+                          <li>0 Comments</li>
+                        </ul>
+                      </div>
+                      <h4 class="title blog-el-title under-line">
+                        <a href="#">Risk Management Best Practices for Small and Medium Enterprises</a>
+                      </h4>
+                      <div class="desc">Explore proven methods for identifying, assessing, and mitigating financial and operational risks within your business.</div>
+                      <div class="blog-button">
+                        <a class="blog-btn text-btn" href="#">Read more <i aria-hidden="true" class="tji-arrow-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</main>
+  <!-- #main -->
+
+  <div data-elementor-type="wp-post" data-elementor-id="1109" class="elementor elementor-1109">
+    <div class="elementor-element elementor-element-6131c23 e-con-full e-flex e-con e-parent" data-id="6131c23"
+      data-element_type="container">
+      <div class="elementor-element elementor-element-813703f elementor-widget elementor-widget-tj-cta"
+        data-id="813703f" data-element_type="widget" data-widget_type="tj-cta.default">
+        <div class="elementor-widget-container">
+
+      
+        </div>
+      </div>
+    </div>
+    <div class="elementor-element elementor-element-525a752 e-flex e-con-boxed e-con e-parent" data-id="525a752"
+      data-element_type="container" data-settings="{" background_background":"classic"}"="">
+      <div class="e-con-inner">
+        <div class="elementor-element elementor-element-f7425c9 e-con-full e-flex e-con e-child" data-id="f7425c9"
+          data-element_type="container">
+          <div class="elementor-element elementor-element-02c4014 elementor-widget elementor-widget-tj-footer-info"
+            data-id="02c4014" data-element_type="widget" data-widget_type="tj-footer-info.default">
+            <div class="elementor-widget-container">
+
+              <div class="footer-widget mb-0">
+                <!-- footer logo -->
+                <div class="site-logo">
+  <a class="primary_logo logo" href="#" 
+       style="font-family: 'Futura', 'Montserrat', 'Poppins', 'Avenir', 'Circular', sans-serif;
+            font-weight: 700; 
+            font-size: 2rem; 
+            letter-spacing: 0.05em; 
+            color: #ffffff; 
+            text-transform: uppercase; 
+            text-decoration: none; 
+            display: inline-block;">
+   Vega
+  </a>
+</div>
+
+
+                <div class="desc">
+                  Our mission is to empowers businesses off our all size too thrive in an businesses ever changing
+                  marketplaces. </div>
+                <div class="footer-social">
+                  <h5 class="title">Follow us</h5>
+                 <ul>
+                    <li>
+                      <a class="link" href="#"><i class="fas fa-money-bill-wave"></i></a>
+                    </li>
+                    <li>
+                      <a class="link" href="#"><i class="fas fa-chart-line"></i></a>
+                    </li>
+                    <li>
+                       <a class="link" href="#"><i class="fas fa-handshake"></i></a>
+                    </li>
+                     <li>
+                       <a class="link" href="#"><i class="fas fa-building-columns"></i></a>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="elementor-element elementor-element-b29db4d e-con-full e-flex e-con e-child" data-id="b29db4d"
+          data-element_type="container">
+          <div class="elementor-element elementor-element-d55eb6a elementor-widget elementor-widget-tj-footer-contact"
+            data-id="d55eb6a" data-element_type="widget" data-widget_type="tj-footer-contact.default">
+            <div class="elementor-widget-container">
+
+              <div class="footer-widget footer-contact-infos">
+                <div class="footer-title">
+                  <h4 class="title">Our offices</h4>
+                </div>
+                <div class="infos-item">
+           
+                  <p>Corporate Office – H21, Home Scene Building, Healthscape, Forbach, Mauritius</p>
+                  <a href="#">
+                    +1 XXXXXXXXX </a>
+                </div>
+                
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="elementor-element elementor-element-af59e4b e-con-full e-flex e-con e-child" data-id="af59e4b"
+          data-element_type="container">
+          <div class="elementor-element elementor-element-7ad9f1a elementor-widget elementor-widget-tj-footer-menu"
+            data-id="7ad9f1a" data-element_type="widget" data-widget_type="tj-footer-menu.default">
+            <div class="elementor-widget-container">
+
+              <div class="footer-widget menu-widget mb-0 widget_nav_menu">
+                <div class="footer-title">
+                  <h4 class="title">Resourses</h4>
+                </div>
+
+                <div class="widget-menu">
+                  <ul>
+                    <li>
+                      <a href="https://vega.mu/contact-us/" target="_self">
+                        Contact us </a>
+
+                    </li>
+                    <li>
+                      <a href="https://vega.mu/contact-us/" target="_self">
+                        Privacy policy </a>
+
+                    </li>
+                    <li>
+                      <a href="https://vega.mu/contact-us/" target="_self">
+                        Recognitions </a>
+
+                    </li>
+                    <li>
+                      <a href="https://vega.mu/careers/" target="_self">
+                        Careers </a>
+
+                    </li>
+                    <li>
+                      <a href="https://vega.mu/team/" target="_self">
+                        Team </a>
+
+                    </li>
+                   
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="elementor-element elementor-element-12bdb18 e-con-full e-flex e-con e-child" data-id="12bdb18"
+          data-element_type="container">
+          <div
+            class="elementor-element elementor-element-ca5d8b4 elementor-widget elementor-widget-tj-footer-navigation"
+            data-id="ca5d8b4" data-element_type="widget" data-widget_type="tj-footer-navigation.default">
+            <div class="elementor-widget-container">
+
+              <div class="footer-widget menu-widget widget_nav_menu">
+                <div class="footer-title">
+                  <h5 class="title">Usefull Links</h5>
+                </div>
+                <div class="widget-menu">
+                  <ul>
+                    <li>
+                      <a href="https://vega.mu/" target="_self">
+                    Home </a>
+
+                    </li>
+                    <li>
+                      <a href="https://vega.mu/about-us/" target="_self">
+                     About Us</a>
+
+                    </li>
+                    <li>
+                      <a href="https://vega.mu/#/" target="_self">
+                       Services</a>
+
+                    </li>
+                    <li>
+                      <a href="https://vega.mu/#" target="_self">
+                       Portfolio </a>
+
+                    </li>
+                 
+                    <li>
+                      <a href="https://vega.mu/blog/" target="_self">
+                        Blog </a>
+
+                    </li>
+                  </ul>
+                  <div class="menu-service-menu-container">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="elementor-element elementor-element-f99ad47 e-flex e-con-boxed e-con e-parent" data-id="f99ad47"
+      data-element_type="container" data-settings="{" background_background":"classic"}"="">
+      <div class="e-con-inner">
+        <div
+          class="elementor-element elementor-element-cc56f65 e-con-full elementor-hidden-tablet_extra elementor-hidden-tablet elementor-hidden-mobile_extra elementor-hidden-mobile e-flex e-con e-child"
+          data-id="cc56f65" data-element_type="container">
+        </div>
+        <div class="elementor-element elementor-element-38edad8 e-con-full tj-el-border e-flex e-con e-child"
+          data-id="38edad8" data-element_type="container">
+          <div
+            class="elementor-element elementor-element-b3087d2 elementor-widget-tablet_extra__width-initial elementor-widget elementor-widget-tj-footer-bottom"
+            data-id="b3087d2" data-element_type="widget" data-widget_type="tj-footer-bottom.default">
+            <div class="elementor-widget-container">
+
+              <div class="copyright-content-area justify-content-center justify-content-lg-between">
+                <!-- copyright text -->
+                <div class="copyright-text">
+                  <p>© 2025 <a href="vega.mu" target="_blank" rel="noopener"> Vega </a> All right reserved.</p>
+                </div>
+                <div class="copyright-menu">
+                  <div class="menu-footer-menu-container">
+                    <ul id="menu-footer-menu" class="menu">
+                      <li id="menu-item-1085"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1085"><a
+                          href="https://vega.mu/contact/">Policy & privacy</a></li>
+                      <li id="menu-item-1086"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1086"><a
+                          href="https://Vega.mu/contact/">Terms & conditions</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="elementor-element elementor-element-8b00b6e e-con-full e-flex e-con e-parent" data-id="8b00b6e"
+      data-element_type="container">
+      <div
+        class="elementor-element elementor-element-2ec8c18 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-html"
+        data-id="2ec8c18" data-element_type="widget" data-settings="{" _position":"absolute"}"=""
+        data-widget_type="html.default">
+        <div class="elementor-widget-container">
+          <button id="back_to_top" type="button" class="back-to-top-btn style-2">
+            <i class="tji-arrow-up"></i>
+            <span>GO TOP</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/vega\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+  <div id="woosw_wishlist" class="woosw-popup woosw-popup-center"></div>
+  <script type="text/javascript">
+    jQuery(function ($) {
+      if (!String.prototype.getDecimals) {
+        String.prototype.getDecimals = function () {
+          var num = this,
+            match = ('' + num).match(/(?:\.(\d+))?(?:[eE]([+-]?\d+))?$/);
+          if (!match) {
+            return 0;
+          }
+          return Math.max(0, (match[1] ? match[1].length : 0) - (match[2] ? +match[2] : 0));
+        }
+      }
+      // Quantity "plus" and "minus" buttons
+      $(document.body).on('click', '.plus, .minus', function () {
+        var $qty = $(this).closest('.quantity').find('.qty'),
+          currentVal = parseFloat($qty.val()),
+          max = parseFloat($qty.attr('max')),
+          min = parseFloat($qty.attr('min')),
+          step = $qty.attr('step');
+
+        // Format values
+        if (!currentVal || currentVal === '' || currentVal === 'NaN') currentVal = 0;
+        if (max === '' || max === 'NaN') max = '';
+        if (min === '' || min === 'NaN') min = 0;
+        if (step === 'any' || step === '' || step === undefined || parseFloat(step) === 'NaN') step = 1;
+
+        // Change the value
+        if ($(this).is('.plus')) {
+          if (max && (currentVal >= max)) {
+            $qty.val(max);
+          } else {
+            $qty.val((currentVal + parseFloat(step)).toFixed(step.getDecimals()));
+          }
+        } else {
+          if (min && (currentVal <= min)) {
+            $qty.val(min);
+          } else if (currentVal > 0) {
+            $qty.val((currentVal - parseFloat(step)).toFixed(step.getDecimals()));
+          }
+        }
+
+        // Trigger change event
+        $qty.trigger('change');
+      });
+    });
+  </script>
+  <script>
+    const lazyloadRunObserver = () => {
+      const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
+      const lazyloadBackgroundObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            let lazyloadBackground = entry.target;
+            if (lazyloadBackground) {
+              lazyloadBackground.classList.add('e-lazyloaded');
+            }
+            lazyloadBackgroundObserver.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '200px 0px 200px 0px' });
+      lazyloadBackgrounds.forEach((lazyloadBackground) => {
+        lazyloadBackgroundObserver.observe(lazyloadBackground);
+      });
+    };
+    const events = [
+      'DOMContentLoaded',
+      'elementor/lazyload/observe',
+    ];
+    events.forEach((event) => {
+      document.addEventListener(event, lazyloadRunObserver);
+    });
+  </script>
+  <script>
+    (function () {
+      var c = document.body.className;
+      c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+      document.body.className = c;
+    })();
+  </script>
+  <link rel="stylesheet" id="wc-blocks-style-css" href="css/wc-blocks.css" media="all">
+  <link rel="stylesheet" id="elementor-post-1034-css" href="css/post-1034.css" media="all">
+  <link rel="stylesheet" id="elementor-post-5587-css" href="css/post-5587.css" media="all">
+  <link rel="stylesheet" id="elementor-icons-fa-brands-css" href="css/brands.min.css" media="all">
+  <link rel="stylesheet" id="elementor-post-5606-css" href="css/post-5606.css" media="all">
+  <link rel="stylesheet" id="elementor-post-5619-css" href="css/post-5619.css" media="all">
+  <link rel="stylesheet" id="elementor-post-1109-css" href="css/post-1109.css" media="all">
+  <script src="js/hooks.min.js" id="wp-hooks-js"></script>
+  <script src="js/i18n.min.js" id="wp-i18n-js"></script>
+  <script id="wp-i18n-js-after">
+    wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
+  </script>
+  <script src="js/index.js" id="swv-js"></script>
+  <script id="contact-form-7-js-before">
+    var wpcf7 = {
+      "api": {
+        "root": "https:\/\/vega.mu\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+      }
+    };
+  </script>
+  <script src="js/index_1.js" id="contact-form-7-js"></script>
+  <script id="wc-add-to-cart-variation-js-extra">
+    var wc_add_to_cart_variation_params = { "wc_ajax_url": "\/?wc-ajax=%%endpoint%%", "i18n_no_matching_variations_text": "Sorry, no products matched your selection. Please choose a different combination.", "i18n_make_a_selection_text": "Please select some product options before adding this product to your cart.", "i18n_unavailable_text": "Sorry, this product is unavailable. Please choose a different combination.", "i18n_reset_alert_text": "Your selection has been reset. Please select some product options before adding this product to your cart." };
+  </script>
+  <script src="js/add-to-cart-variation.min.js" id="wc-add-to-cart-variation-js" data-wp-strategy="defer"></script>
+  <script src="js/slick.min.js" id="slick-js"></script>
+  <script src="js/perfect-scrollbar.jquery.min.js" id="perfect-scrollbar-js"></script>
+  <script src="js/jquery.magnific-popup.min.js" id="magnific-popup-js"></script>
+  <script id="woosq-frontend-js-extra">
+    var woosq_vars = { "wc_ajax_url": "\/?wc-ajax=%%endpoint%%", "nonce": "72c03f0830", "view": "popup", "effect": "mfp-3d-unfold", "scrollbar": "yes", "auto_close": "yes", "hashchange": "no", "cart_redirect": "no", "cart_url": "https:\/\/solvior.themejunction.net\/cart\/", "close": "Close (Esc)", "next_prev": "yes", "next": "Next (Right arrow key)", "prev": "Previous (Left arrow key)", "thumbnails_effect": "no", "related_slick_params": "{\"slidesToShow\":2,\"slidesToScroll\":2,\"dots\":true,\"arrows\":false,\"adaptiveHeight\":true,\"rtl\":false}", "thumbnails_slick_params": "{\"slidesToShow\":1,\"slidesToScroll\":1,\"dots\":true,\"arrows\":true,\"adaptiveHeight\":false,\"rtl\":false}", "thumbnails_zoom_params": "{\"duration\":120,\"magnify\":1}", "quick_view": "0" };
+  </script>
+  <script src="js/frontend.js" id="woosq-frontend-js"></script>
+  <script id="woosw-frontend-js-extra">
+    var woosw_vars = { "wc_ajax_url": "\/?wc-ajax=%%endpoint%%", "nonce": "e757e72be8", "added_to_cart": "no", "auto_remove": "no", "page_myaccount": "yes", "menu_action": "open_page", "reload_count": "no", "perfect_scrollbar": "yes", "wishlist_url": "https:\/\/solvior.themejunction.net\/wishlist\/", "button_action": "list", "message_position": "right-top", "button_action_added": "popup", "empty_confirm": "This action cannot be undone. Are you sure?", "delete_confirm": "This action cannot be undone. Are you sure?", "copied_text": "Copied the wishlist link:", "menu_text": "Wishlist", "button_text": "Add to wishlist", "button_text_added": "Browse wishlist", "button_normal_icon": "woosw-icon-5", "button_added_icon": "woosw-icon-8", "button_loading_icon": "woosw-icon-4" };
+  </script>
+  <script src="js/frontend_1.js" id="woosw-frontend-js"></script>
+  <script src="js/bootstrap.bundle.min.js" id="tj-bootstrap-js"></script>
+  <script src="js/gsap.min.js" id="tj-gsap-min-js"></script>
+  <script src="js/scroll-to-plugin.min.js" id="tj-scroll-to-plugin-js"></script>
+  <script src="js/gsap-scroll-trigger.min.js" id="tj-gsap-scroll-trigger-js"></script>
+  <script src="js/gsap-split-text.min.js" id="tj-gsap-split-text-js"></script>
+  <script src="js/smooth-scroll.min.js" id="tj-smooth-scroll-js"></script>
+  <script src="js/appear.min.js" id="tj-appear-min-js"></script>
+  <script src="js/wow.min.js" id="tj-wow-min-js"></script>
+  <script src="js/nice-select.js" id="tj-nice-select-js"></script>
+  <script src="js/meanmenu.js" id="tj-meanmenu-js"></script>
+  <script src="js/odometer.min.js" id="tj-odometer-js"></script>
+  <script src="js/solvior-knob.js" id="tj-solvior-knob-js"></script>
+  <script src="js/swiper.min.js" id="tj-swiper-min-js"></script>
+  <script src="js/venobox.min.js" id="tj-venobox-min-js"></script>
+  <script src="js/chart.min.js" id="tj-chart-min-js"></script>
+  <script src="js/purecounter.js" id="tj-purecounter-js"></script>
+  <script src="js/imagesloaded.min.js" id="imagesloaded-js"></script>
+  <script src="js/isotope.pkgd.min.js" id="tj-isotope-js"></script>
+  <script src="js/solvior-core.js" id="tj-solvior-core-js"></script>
+  <script src="js/sourcebuster.min.js" id="sourcebuster-js-js"></script>
+  <script id="wc-order-attribution-js-extra">
+    var wc_order_attribution = { "params": { "lifetime": 1.0e-5, "session": 30, "base64": false, "ajaxurl": "https:\/\/solvior.themejunction.net\/wp-admin\/admin-ajax.php", "prefix": "wc_order_attribution_", "allowTracking": true }, "fields": { "source_type": "current.typ", "referrer": "current_add.rf", "utm_campaign": "current.cmp", "utm_source": "current.src", "utm_medium": "current.mdm", "utm_content": "current.cnt", "utm_id": "current.id", "utm_term": "current.trm", "utm_source_platform": "current.plt", "utm_creative_format": "current.fmt", "utm_marketing_tactic": "current.tct", "session_entry": "current_add.ep", "session_start_time": "current_add.fd", "session_pages": "session.pgs", "session_count": "udata.vst", "user_agent": "udata.uag" } };
+  </script>
+  <script src="js/order-attribution.min.js" id="wc-order-attribution-js"></script>
+  <script src="js/tj-core-ex.js" id="tj-addons-ex-js"></script>
+  <script src="js/tj-core.js" id="tjcore-script-js"></script>
+  <script src="js/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+  <script src="js/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+  <script src="js/core.min.js" id="jquery-ui-core-js"></script>
+  <script id="elementor-frontend-js-before">
+    var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": true }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": true }, "laptop": { "label": "Laptop", "value": 1399, "default_value": 1366, "direction": "max", "is_enabled": true }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } }, "hasCustomBreakpoints": true }, "version": "3.31.3", "is_static": false, "experimentalFeatures": { "additional_custom_breakpoints": true, "container": true, "nested-elements": true, "e_element_cache": true, "home_screen": true, "global_classes_should_enforce_capabilities": true, "e_variables": true, "cloud-library": true, "e_opt_in_v4_page": true }, "urls": { "assets": "https:\/\/vega.mu\/wp-content\/plugins\/elementor\/assets\/", "ajaxurl": "https:\/\/vega.mu\/wp-admin\/admin-ajax.php", "uploadUrl": "https:\/\/vega.mu\/wp-content\/uploads" }, "nonces": { "floatingButtonsClickTracking": "4cd7d30ece" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_mobile_extra", "viewport_tablet", "viewport_tablet_extra", "viewport_laptop"], "viewport_laptop": 1399, "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 58, "title": "Home%2002%20%E2%80%93%20Solvior", "excerpt": "", "featuredImage": false } };
+  </script>
+  <script src="js/frontend.min.js" id="elementor-frontend-js"></script>
+
+
+</body>
+
+</html>
