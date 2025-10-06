@@ -1,0 +1,40 @@
+/* Elementor Widget CSS */
+.elementor-widget-tj-image .tj_image {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+}
+.elementor-widget-tj-image .tj_image::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	z-index: 1;
+}
+.elementor-widget-tj-image .tj_image .image {
+	object-fit: cover;
+}
+.editor_text p,
+.editor_text a,
+.editor_text h6,
+.editor_text ul,
+.editor_text ol {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	color: inherit;
+	margin: inherit;
+	padding: inherit;
+}
+
+.editor_text h1,
+.editor_text h2,
+.editor_text h3,
+.editor_text h4,
+.editor_text h5 {
+	color: inherit;
+}
